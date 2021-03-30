@@ -1,0 +1,21 @@
+Please type in one of the Error type (syntax, runtime, logic) after each operation.
+If no error, say no error.
+
+1. Change the first println to print
+Error Type: No Error
+	
+2. Change the second println to printing
+Error Type: Syntax Error
+
+3. Remove the semicolon at the end of one of the statements
+Error Type: Syntax Error
+
+4. Remove the last brace of the program
+Error Type: Syntax Error
+	
+5. Change main to man
+Error Type: Runtime Error
+
+6. Something else you tried?
+Operation description: Change the class name to HelloWorld
+Error Type: Sytnax Error

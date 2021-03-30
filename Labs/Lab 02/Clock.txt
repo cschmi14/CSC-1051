@@ -1,0 +1,13 @@
+1. What happens if you enter a string instead of the number?
+	The program does not execute properly, and the compiler reads "Exception in thread "main" java.util.InputMismatchException".
+
+2. What happens if you enter an extreme large number, for example, 3,000,000,000? 
+	The program will not execute properly, and the compiler reads "Exception in thread "main" java.util.InputMismatchException: For input string: "3000000000"".
+
+3. What happens if you enter a negative number?
+	In this case, the program still executes properly, and the output will be the same, but total seconds will be negative and the negative number will appear negative in the hours:minutes:seconds format, depending on which variable the negative number was assigned to.
+
+4. Try to explain the above three cases base on your observation.
+	In the first case, the input must be an integer value, so inputting a string will prevent the program from running properly since a string can't be assigned to the int variable "hours".
+	In the second case, the input must be within the range of values for an int variable (-2147483648 to 2147483647), so 3000000000 can't be assigned to hours since it is too large of a number for an int variable.
+	In the third case, the program works since a negative number is still acceptable for an int variable, even though it does not make sense to have a negative hour/minute/second value when telling the time in 24 hour format.

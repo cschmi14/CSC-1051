@@ -1,0 +1,20 @@
+4 + 3: 7
+3.1 * 0.2e-4: 6.2E-5
+a: 5
+b: 3.4
+c: 2
+14 / 3: 4
+14 % 3: 2
+143 / 60: 2
+143 % 60: 23
+8 / 12: 0
+8 % 12: 8
+1 + word: 1car
+1 + 1 + word: 2car
+word + 1 + 1: car11
+sentence = word + word: carcar
+sentence = sentence + sentence: carcarcarcar
+Math.sqrt(2): 1.414
+Math.PI: 3.142     
+Math.sin(Math.PI): 1.225
+Math.round(2.8): 3

@@ -1,0 +1,44 @@
+Follow the Algorithm procedure in class will help you design your own program.
+
+1. List all the inputs and outputs.
+	Inputs: originalCents;
+	Outputs: quarters, dimes, nickels, pennies;
+
+2. Figure out the computational relationships between the inputs and outputs.
+	originalCents = (QUARTER_VALUE * quarters) + (DIME_VALUE * dimes) + (NICKEL_VALUE * nickels) + (pennies * PENNY_VALUE);
+
+3. Write down the variables and the types based on your inputs, outputs and computational procedure.
+         int originalCents; // only used to print at the end to show the original amount in cents
+         int cents; // variable that will decrease in the equations later on to calculate the number of each coin
+	 int quarters;
+	 int dimes;
+	 int nickels;
+	 int pennies;
+	 final int QUARTER_VALUE = 25;
+	 final int DIME_VALUE = 10;
+	 final int NICKEL_VALUE = 5;
+	 final int PENNY_VALUE = 1;
+
+4. Translate the computational relationships to expressions and statements.
+	cents = originalCents
+	quarters = cents / QUARTER_VALUE;
+	cents = cents - (quarters * QUARTER_VALUE);
+	dimes = cents / DIME_VALUE;
+	cents = cents - (dimes * DIME_VALUE);
+	nickels = cents / NICKEL_VALUE;
+	cents = cents - (nickels * NICKEL_VALUE);
+	pennies = cents / PENNY_VALUE;
+
+
+5. Write down the ways to collect inputs and deliver the outputs.
+	Collecting Inputs:
+	System.out.println("Enter the total amount of cents here: ");
+	originalCents = scan.nextInt();
+        cents = originalCents
+
+	Delivering Outpouts:
+	 System.out.println(originalCents + " cents = ");
+	 System.out.println("           " + quarters + " Quarters");
+	 System.out.println("           " + dimes + " Dimes");
+	 System.out.println("           " + nickels + " Nickels");
+	 System.out.println("           " + pennies + " Pennies");
